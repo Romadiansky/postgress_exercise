@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Romadiansky/postgress_exercise/issues"
   },
-  "homepage": "https://github.com/Romadiansky/postgress_exercise#readme"
+  "homepage": "https://github.com/Romadiansky/postgress_exercise#readme",
+  "dependencies": {
+    "pg": "^7.5.0"
+  }
 }
