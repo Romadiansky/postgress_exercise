@@ -1,13 +1,13 @@
 // Update with your config settings.
-
+const settings = require("./settings");
 module.exports = {
 
   development: {
-    client: 'postgresql',
+    client: 'pg',
     connection: {
-      database: 'test_db',
-      user:     'development',
-      password: 'development'
+      database: settings.database,
+      user:     settings.user,
+      password: settings.password
     },
     pool: {
       min: 2,
@@ -22,8 +22,8 @@ module.exports = {
     client: 'postgresql',
     connection: {
       database: 'my_db',
-      user:     'username',
-      password: 'password'
+      user:     settings.user,
+      password: settings.password
     },
     pool: {
       min: 2,
@@ -38,8 +38,8 @@ module.exports = {
     client: 'postgresql',
     connection: {
       database: 'my_db',
-      user:     'username',
-      password: 'password'
+      user:     settings.user,
+      password: settings.password
     },
     pool: {
       min: 2,
