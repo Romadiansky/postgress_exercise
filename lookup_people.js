@@ -17,7 +17,8 @@ client.connect((err) => {
     return console.error("Connection Error", err);
   }
   client.query(`SELECT * FROM famous_people WHERE first_name
-    LIKE $1::text OR last_name LIKE $1::text`, [searchQ], (err, result) => {
+    LIKE $1::text OR last_name LIKE $1::text`,
+    [searchQ], (err, result) => {
     if (err) {
       return console.error("error running query", err);
     }
